@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /*Primary Colors*/
+  --primary-black:#000000;
+  --primary-red:#E50914;
+  --primary-white:#FFFFFF;
+  --primary-white2:#e7e7e7;
+
+  /*Secondary Colors*/
+  --secondary-red-200:#C11119;
+  --secondary-red-300:#F50723;
+  --secondary-blue-100:#0071EB;
+  --secondary-green:#46d369;
+
+  /*Neutral Colors*/
+  --grey-10: #e5e5e5;
+  --grey-500: #363636;
+  --grey-400:#414141;
+  --grey-900: #141414;
+}
+
+@font-face {
+  font-family: 'Netflix-Sans'; 
+  src: url('fonts/NetflixSans-Bold.woff2') format('woff2'),
+       url('fonts/NetflixSans-Bold.otf') format('oft');
+}
+
+@font-face {
+  font-family: 'Netflix-Sans-Regular'; 
+  src: url('fonts/NetflixSans-Regular.woff2') format('woff2'),
+       url('fonts/NetflixSans-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Netflix-Sans-Light'; 
+  src: url('fonts/NetflixSans-Light.woff2') format('woff2'),
+       url('fonts/NetflixSans-Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Netflix-Sans-Medium'; 
+  src: url('fonts/NetflixSans-Medium.woff2') format('woff2'),
+       url('fonts/NetflixSans-Medium.otf') format('otf');
+}
+
+body {
+  background: url(./assets/BlurBackground.png);
+  background-size: 2100px;
+  background-repeat: no-repeat;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+  border: 4.7px solid var(--primary-red);
+  background: #414141b4;
+  border-radius: 10px;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+
+.find-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para o título */
+h1 {
+  color: var(--primary-red); /* Vermelho Netflix */
+  margin: 20px 0;
+  font-family: 'Bebas Neue',serif;
+  font-weight: 1000;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.find-container p {
+  margin: 1rem 0.7rem 2rem ;
+  font-family: 'Netflix-Sans-Regular', sans-serif;
+  color: var(--primary-white);
+  font-size: 18px;
+}
+
+/* Estilos para o botão "Recomendar" */
+.find {
+  background-color: var(--primary-red); /* Vermelho Netflix */
+  color: var(--primary-white);
+  width: 60%;
+  height: 4.5vh;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-family: 'Netflix-Sans';
+  font-size: 18px;
+
+  transition: background 0.5s ;
+}
+
+.find:hover {
+  border: 2.5px solid var(--primary-white);
+
+}
+
+/* Estilos para o contêiner principal */
+#filmes-container {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/*Estilos para o gradiente dos filmes*/
+#gradiente {
+  background-image: linear-gradient(180deg, #00000008 5%, #262626d8 50%, #262626 100%);
+  height: 100%;
+  border-radius: 0 0 5px 5px;
+  
+ }
+
+/* Estilos para cada filme */
+#filme-div {
+  display: block;
+  border-radius: 10px 10px 5px 5px;
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0 0;
+}
+
+/* Estilos para a imagem */
+#filme-div img {
+  max-width: 200px;
+  height: auto;
+  box-shadow: 0px 5px 10px rgb(5, 5, 5); /* Deslocamento vertical de 5px e desfoque de 10px */
+  }
+
+/*Estilos para o Titulo e Sinopse*/
+#filme-text {
+
+  margin: -4rem 0rem 0 0rem;
+  padding: 4.5rem 1rem 1rem;
+  border-radius: 10px 10px 5px 5px;
+}
+
+/* Estilos para as informações */
+#filme-div h2 {
+  margin-bottom: .5rem;
+  font-family: 'Netflix-Sans', sans-serif;
+  font-size: 20px;
+  color: var(--primary-white);
+}
+
+#filme-div p {
+  margin: 1rem;
+  text-align: justify;
+  font-family: 'Netflix-Sans-Regular', sans-serif;
+  
+  color: var(--primary-white2);
+
+}
+
+/* Estilos para o botão "Assistir Agora" */
+.assistir-agora {
+  padding: 10px 20px;
+  width: 200px;
+  height: 4.5vh;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  font-family: 'Netflix-Sans-Medium';
+  font-size: 16px;
+
+  transition: background 0.2s;
+}
+
+.assistir-agora:hover {
+  border:2.5px solid var(--primary-white);
+}
+
+.logo img {
+  height: auto;
+  width: 20px;
+  
+}
+
+
+.container {
+    /* ... other styles */
+    display: flex; /* Initially flex for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: display 0.5s, grid-template-columns 0.5s; /* Smooth transitions */
+}
+
+@media (min-width:800px) {
+  .container.grid { /* Styles for grid layout */
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+      height: 94vh; 
+      align-items: stretch; /* Stretch items to fill height */
+  }
+
+  .find-container, #filmes-container { /* Target both divs */
+      display: flex; /* Use flexbox for vertical centering */
+      flex-direction: column; /* Stack elements vertically */
+      height: 100%; /* Fill the grid cell height */
+  }
+
+  .find-container {
+      justify-content: center; /* Center content vertically */
+      align-items: center;
+      text-align: center;
+      padding: 30vh 0;
+      height: 92vh;
+  }
+
+  #filmes-container {
+    width: 100%;
+  }
+
+  #filme-div img {
+    max-width: 350px;
+    margin: 1rem 0;
+  }
+
+  #filme-div {
+    border-radius: 3rem 5px 5px 3rem ;
+  }
+
+  #filme-text {
+    border-radius: 0 0 5px 3rem;
+  }
+
+  #filme-text h2 {
+    font-family: 'Netflix-Sans';
+    font-size: 28px;
+  }
+
+  #filme-text p {
+    margin: 0 6rem;
+    font-family: 'Netflix-Sans-Medium';
+  }
+  
+
+  #filme-div{
+    display: block;
+    height: 100%;
+  }
+  #gradiente {
+   background-image: linear-gradient(180deg, #00000008 5%, #262626d8 50%, #262626 100%);
+   height: 100%;
+   border-radius: 0 0 5px 3rem;
+   
+  }
+
+  .logo img {
+    height: auto;
+    width: 30px;
+  }
+
+  .assistir-agora {
+    margin-bottom: 3rem;
+    width: 350px;
+  }
+
+}
