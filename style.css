@@ -58,7 +58,7 @@ body {
  /* border: 4.7px solid var(--primary-red);*/
   background: #414141b4;
   border-radius: 20px;
-  margin: 2rem;
+  margin: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,21 +194,16 @@ h1 {
   
 }
 
-
-.container {
-    /* ... other styles */
-    display: flex; /* Initially flex for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    transition: display 0.5s, grid-template-columns 0.5s; /* Smooth transitions */
-}
-
 @media (min-width:800px) {
   .container.grid { /* Styles for grid layout */
       display: grid;
       grid-template-columns: 1fr 1fr; /* Two equal columns */
       height: 94vh; 
       align-items: stretch; /* Stretch items to fill height */
+  }
+
+  .container {
+    margin: 2rem 1rem;
   }
 
   .find-container, #filmes-container { /* Target both divs */
