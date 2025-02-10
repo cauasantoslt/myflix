@@ -76,9 +76,9 @@ function exibirSerieAleatoria(series) {
 recomendarButton.addEventListener('click', buscarSeriesNetflix)
 
 recomendarButton.addEventListener('click', () => {
-    buscarSeriesNetflix();
-    const container = document.querySelector('.container');
-    container.classList.add('grid'); 
+  buscarSeriesNetflix();
+  const container = document.querySelector('.container');
+  container.classList.add('grid');
 });
 
 
