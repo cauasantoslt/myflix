@@ -265,3 +265,70 @@ h1 {
   }
 
 }
+
+
+/*-------------------------------------------CAROUSEL-----------------------------*/
+#carousel {
+  background: var(--grey-900);
+  padding: 1rem;
+  width: 100%; /* Largura total do contêiner */
+}
+
+#filme-recomend {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os filmes */
+  padding: 2rem; /* Espaçamento interno */
+  overflow-x: auto; /* Barra de rolagem horizontal */
+  -webkit-overflow-scrolling: touch; /* Rolagem suave em dispositivos móveis */
+}
+
+.slider {
+  scroll-snap-align: start; /* Alinha o início de cada filme ao "snap" */
+  flex-shrink: 0; /* Impede que os filmes encolham */
+  width: 200px; /* Largura fixa para cada filme */
+  height: auto; /* Altura automática */
+}
+
+.slider img {
+  width: 100%; /* Largura total da imagem dentro do slider */
+  height: auto; /* Altura automática */
+  box-shadow: 0 10px 10px rgb(5, 5, 5); /* Sombra suave */
+}
+
+/* Estilos para o título do carrossel */
+#carousel h2 {
+  text-align: left; /* Centraliza o título */
+  margin: 0 1rem; /* Espaçamento inferior */
+  color: var(--primary-white2); /* Cor do título (exemplo) */
+  font-family: 'Netflix-Sans-Medium'; /* Fonte do título (exemplo) */
+  font-size: 20px;
+}
+
+/* Estilos para a barra de rolagem (opcional) */
+#filme-recomend::-webkit-scrollbar {
+  height: 8px; /* Altura da barra de rolagem */
+}
+
+#filme-recomend::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Cor de fundo da barra de rolagem */
+  border-radius: 4px;
+  border: none;
+}
+
+#filme-recomend::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Cor do "polegar" da barra de rolagem */
+  border-radius: 4px;
+  border: none;
+}
+
+@media (min-width:800px) {
+  #filme-recomend{
+    padding: 1rem 0;
+    justify-content: center;
+    margin-top: .5rem;
+  }
+
+  #carousel h2{
+    margin-left: 4rem;
+  }
+}

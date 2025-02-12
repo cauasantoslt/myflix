@@ -83,3 +83,15 @@ recomendarButton.addEventListener('click', () => {
 
 
 /*----------------------------------Transition------------------------------------------*/
+const carousel = document.getElementById('filme-recomend');
+const prevButton = document.getElementById('prev-button');
+const nextButton = document.getElementById('next-button');
+const sliderWidth = 220; // Largura de cada filme + espaçamento (200px + 20px)
+
+nextButton.addEventListener('click', () => {
+    carousel.scrollLeft += sliderWidth;
+});
+
+prevButton.addEventListener('click', () => {
+    carousel.scrollLeft -= sliderWidth;
+});
