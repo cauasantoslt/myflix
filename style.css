@@ -267,10 +267,10 @@ h1 {
 }
 
 
-/*-------------------------------------------CAROUSEL-----------------------------*/
+/*-------------------------------------------RECOMENDS FIXEDS-----------------------------*/
 #carousel {
   background: var(--grey-900);
-  padding: 1rem;
+  padding:1rem .5rem; 
   width: 100%; /* Largura total do contêiner */
 }
 
@@ -286,19 +286,19 @@ h1 {
   scroll-snap-align: start; /* Alinha o início de cada filme ao "snap" */
   flex-shrink: 0; /* Impede que os filmes encolham */
   width: 200px; /* Largura fixa para cada filme */
-  height: auto; /* Altura automática */
+  height: 100%; /* Altura automática */
 }
 
 .slider img {
   width: 100%; /* Largura total da imagem dentro do slider */
-  height: auto; /* Altura automática */
-  box-shadow: 0 10px 10px rgb(5, 5, 5); /* Sombra suave */
+  height: 100%; /* Altura automática */
+  box-shadow: 0px 5px 10px rgb(5, 5, 5); /* Sombra suave */
 }
 
 /* Estilos para o título do carrossel */
 #carousel h2 {
   text-align: left; /* Centraliza o título */
-  margin: 0 1rem; /* Espaçamento inferior */
+  margin: 0 2rem; /* Espaçamento inferior */
   color: var(--primary-white2); /* Cor do título (exemplo) */
   font-family: 'Netflix-Sans-Medium'; /* Fonte do título (exemplo) */
   font-size: 20px;
@@ -306,7 +306,8 @@ h1 {
 
 /* Estilos para a barra de rolagem (opcional) */
 #filme-recomend::-webkit-scrollbar {
-  height: 8px; /* Altura da barra de rolagem */
+  height: 0;
+  width: 0;
 }
 
 #filme-recomend::-webkit-scrollbar-track {
@@ -322,13 +323,23 @@ h1 {
 }
 
 @media (min-width:800px) {
+
   #filme-recomend{
     padding: 1rem 0;
     justify-content: center;
     margin-top: .5rem;
   }
 
+  .slider{
+    transition: duration, 70ms;
+    &:hover { 
+      margin: 0 10px;
+      transform: scale(1.1);
+    }
+  }
+
   #carousel h2{
     margin-left: 4rem;
+
   }
 }
