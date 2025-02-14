@@ -95,3 +95,22 @@ nextButton.addEventListener('click', () => {
 prevButton.addEventListener('click', () => {
     carousel.scrollLeft -= sliderWidth;
 });
+
+
+/*
+                              ____                 ____
+                         ____     ____         ____     ____
+                      ____               ______           ____
+                      ____    __                    __    ____
+                        ____                             ____
+                          _____    <>           XX    _____
+                              ___                   ___
+                              ___                   ___
+                            ____         (J)         ____
+                            _____      _______      _____
+                              ______            ______
+                                   ______________
+
+
+
+*/
