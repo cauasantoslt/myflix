@@ -3,27 +3,15 @@
 </p>
 <p align="center"><h1 align="center">MYFLIX</h1></p>
 <p align="center">
-	<em>Your Netflix, Your Recommendation, Your Happiness!</em>
+	<h2>Your Netflix, Your Recommendation, Your Happiness!</h2>
 </p>
-<p align="center">
-	<img src="https://img.shields.io/github/license/cauasantoslt/myflix?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/cauasantoslt/myflix?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/cauasantoslt/myflix?style=default&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/cauasantoslt/myflix?style=default&color=0080ff" alt="repo-language-count">
-</p>
-<p align="center"><!-- default option, no dependency badges. -->
-</p>
-<p align="center">
-	<!-- default option, no dependency badges. -->
-</p>
-<br>
+</br>
 
 
 ## 🌆 Preview
 <p>
-	<img src="./assets/Preview.png" align="center" width="90%">
+	<img src="./assets/Preview.png" align="center" width="100%">
 </p>
----
 
 ## 🔗 Table of Contents
 - [🌆 Preview](#-preview)
