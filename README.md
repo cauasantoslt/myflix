@@ -1,10 +1,7 @@
 <p align="center">
     <img src="./assets/LogoSite.png" align="center" width="60%">
 </p>
-<p align="center"><h1 align="center">MYFLIX</h1></p>
-<p align="center">
-	<h2>Your Netflix, Your Recommendation, Your Happiness!</h2>
-</p>
+<p align="center"><h1 align="center">Your Netflix, Your Recommendation, Your Happiness!</h1></p>
 </br>
 
 
